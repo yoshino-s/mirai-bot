@@ -1,0 +1,37 @@
+{
+  "name": "@mirai-bot/cli",
+  "version": "2.1.0",
+  "description": "cli tool of mirai-bot",
+  "files": [
+    "/dist",
+    "/bin"
+  ],
+  "bin": {
+    "mirai-bot": "./bin/cli"
+  },
+  "repository": "git@github.com:Yoshino-s/buubot2.git",
+  "author": "Yoshino-s <yoshino.prog@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && cp -r src/template dist/template",
+    "prepublish": "rm -rf dist && yarn build"
+  },
+  "dependencies": {
+    "ajv": "^6.12.5",
+    "chalk": "^4.1.0",
+    "change-case": "^4.1.1",
+    "colors": "^1.4.0",
+    "ejs": "^3.1.5",
+    "inquirer": "^7.3.3",
+    "yaml": "^1.10.0",
+    "yargs": "^16.0.3",
+    "typescript": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.0.4",
+    "@types/inquirer": "^7.3.1",
+    "@types/node": "^14.11.2",
+    "@types/yargs": "^15.0.7",
+    "ts-node": "^9.0.0"
+  }
+}

@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+/* eslint-disable */
+
+try {
+  require("../dist/index.js").run();
+} catch (e) {
+  require("ts-node").register();
+  require("../src/index.ts").run();
+}

@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "qq": {
+      "type": "object",
+      "properties": {
+        "account": {
+          "type": "number"
+        },
+        "password": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "account",
+        "password"
+      ]
+    },
+    "bot": {
+      "type": "object",
+      "properties": {
+        "commandPrefix": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "privilege": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "commandPrefix"
+      ]
+    },
+    "redis": {
+      "type": "object",
+      "properties": {
+        "password": {
+          "type": "string",
+          "minLength": 8
+        },
+        "port": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "password"
+      ]
+    },
+    "web": {
+      "type": "object",
+      "properties": {
+        "host": {
+          "type": "string",
+          "format": "hostname"
+        },
+        "port": {
+          "type": "number"
+        }
+      }
+    },
+    "api": {
+      "type": "object",
+      "properties": {
+        "authKey": {
+          "type": "string",
+          "minLength": 8
+        },
+        "port": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "authKey"
+      ]
+    },
+    "remote": {
+      "type": "object",
+      "properties": {
+        "host": {
+          "type": "string",
+          "format": "hostname"
+        }
+      },
+      "required": [
+        "host"
+      ]
+    },
+    "proxy": {
+      "type": "object",
+      "properties": {
+        "protocol": {
+          "type": "string",
+          "enum": [
+            "socks",
+            "socks5",
+            "socks4",
+            "http",
+            "https"
+          ]
+        },
+        "host": {
+          "type": "string",
+          "format": "hostname"
+        },
+        "port": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "protocol",
+        "host",
+        "port"
+      ]
+    }
+  },
+  "title": "Config",
+  "required": [
+    "qq",
+    "bot",
+    "redis",
+    "web",
+    "api"
+  ]
+}

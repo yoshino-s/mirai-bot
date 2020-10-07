@@ -1,0 +1,33 @@
+{
+  "name": "@mirai-bot/core",
+  "version": "2.1.0",
+  "description": "Core part of mirai-bot",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "repository": "git@github.com:Yoshino-s/buubot2.git",
+  "author": "Yoshino-s <yoshino.prog@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "rm -rf dist && tsc"
+  },
+  "dependencies": {
+    "@mirai-bot/config": "^2.1.1",
+    "@mirai-bot/utils": "^2.1.1",
+    "@types/ejs": "^3.0.4",
+    "bull-board": "^0.9.0",
+    "ejs": "^3.1.5",
+    "log4js": "^6.3.0",
+    "mirai-ts": "^0.7.4",
+    "yaml": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/bull": "^3.14.3",
+    "@types/bull-board": "^0.6.0",
+    "@types/node": "^14.11.2",
+    "@types/redis": "^2.8.27",
+    "typescript": "^4.0.3"
+  }
+}

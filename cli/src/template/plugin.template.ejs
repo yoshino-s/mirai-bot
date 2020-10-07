@@ -1,0 +1,8 @@
+import { Args, BotPlugin, Cmd } from "@mirai-bot/core";
+
+export class <%= name %>  extends BotPlugin {
+  @Cmd("echo")
+  echo(@Args args: string) {
+    return args;
+  }
+}

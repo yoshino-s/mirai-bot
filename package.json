@@ -1,0 +1,20 @@
+{
+  "name": "@mirai-bot/global",
+  "version": "2.1.0",
+  "description": "Core part of ",
+  "repository": "git@github.com:Yoshino-s/buubot2.git",
+  "author": "Yoshino-s <yoshino.prog@gmail.com>",
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5",
+    "typescript": "^4.0.3"
+  }
+}
