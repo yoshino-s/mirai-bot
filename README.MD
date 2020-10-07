@@ -54,11 +54,11 @@ Setup a full bot docker (including `mirai` and `redis`) and expose all the port
 
 And use the same config file in your development environment
 
-Add
+And dd
 
 ```yaml
 remote:
-  host: 101.200.191.30
+  host: localhost_or_remote_ip
 ```
 
 in the `config.yml` of development environment
